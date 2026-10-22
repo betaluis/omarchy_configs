@@ -75,6 +75,6 @@ o.bind("SUPER + SHIFT + R", "Toggle screen recording (region, no audio)", "omarc
 -- Toggle the active workspace between dwindle and scrolling layouts.
 o.bind("SUPER + D", "Toggle workspace dwindle/scrolling layout", "omarchy-hyprland-workspace-layout-toggle")
 
--- Replace Signal with Grok Bot, launching without requiring FUSE.
+-- Replace Signal with Grok Bot, using the installed AppImage symlink.
 hl.unbind("SUPER + SHIFT + G")
-o.bind("SUPER + SHIFT + G", "Grok Bot", "env APPIMAGE_EXTRACT_AND_RUN=1 /home/luis/Downloads/Grok_Bot_0.70.2.AppImage")
+o.bind("SUPER + SHIFT + G", "Grok Bot", "env APPIMAGE_EXTRACT_AND_RUN=1 /home/waldo/.local/opt/grok-bot/Grok_Bot.AppImage")
