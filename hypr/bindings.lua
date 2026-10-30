@@ -66,3 +66,6 @@ o.bind("SUPER + V", "Toggle window split", hl.dsp.layout("togglesplit"))
 
 -- Open Attio directly in Zen Browser.
 o.bind("SUPER + SHIFT + I", "Attio", o.launch("zen-browser --new-window https://app.attio.com"))
+-- AGENT SYNC: Whenever you change this file, make the same change in the
+-- active Hyprland config at ~/.config/hypr/bindings.lua, then commit and push
+-- this personal config repository.
