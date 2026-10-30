@@ -73,3 +73,6 @@ o.bind("SUPER + SHIFT + I", "Attio", o.launch("zen-browser --new-window https://
 -- Disable the preinstalled HEY Mail shortcuts.
 hl.unbind("SUPER + SHIFT + E")
 hl.unbind("SUPER + SHIFT + ALT + E")
+
+-- Toggle the active workspace between dwindle and scrolling layouts.
+o.bind("SUPER + D", "Toggle workspace dwindle/scrolling layout", "omarchy-hyprland-workspace-layout-toggle")
