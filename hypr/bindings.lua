@@ -65,4 +65,4 @@ o.bind("SUPER + SHIFT + N", "Screenshot to clipboard", "omarchy-capture-screensh
 o.bind("SUPER + V", "Toggle window split", hl.dsp.layout("togglesplit"))
 
 -- Open Attio directly in Zen Browser.
-o.bind("SUPER + SHIFT + I", "Attio", o.launch("zen https://app.attio.com"))
+o.bind("SUPER + SHIFT + I", "Attio", o.launch("zen-browser --new-window https://app.attio.com"))
