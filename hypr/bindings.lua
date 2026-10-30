@@ -63,3 +63,6 @@ o.bind("SUPER + SHIFT + J", "Move window down", hl.dsp.window.swap({ direction =
 -- Screenshot directly to the clipboard, and put the old split toggle on SUPER+V.
 o.bind("SUPER + SHIFT + N", "Screenshot to clipboard", "omarchy-capture-screenshot smart copy")
 o.bind("SUPER + V", "Toggle window split", hl.dsp.layout("togglesplit"))
+
+-- Open Attio directly in Zen Browser.
+o.bind("SUPER + SHIFT + I", "Attio", o.launch("zen https://app.attio.com"))
