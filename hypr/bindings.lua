@@ -1,5 +1,8 @@
 -- Keep only your personal keybinding overrides here. Add new bindings or
 -- unbind defaults before replacing them.
+-- AGENT SYNC: Whenever you change this file, make the same change in the
+-- active Hyprland config at ~/.config/hypr/bindings.lua, then commit and push
+-- this personal config repository.
 
 -- See current bindings and descriptions:
 --   omarchy menu keybindings --print
@@ -66,6 +69,7 @@ o.bind("SUPER + V", "Toggle window split", hl.dsp.layout("togglesplit"))
 
 -- Open Attio directly in Zen Browser.
 o.bind("SUPER + SHIFT + I", "Attio", o.launch("zen-browser --new-window https://app.attio.com"))
--- AGENT SYNC: Whenever you change this file, make the same change in the
--- active Hyprland config at ~/.config/hypr/bindings.lua, then commit and push
--- this personal config repository.
+
+-- Disable the preinstalled HEY Mail shortcuts.
+hl.unbind("SUPER + SHIFT + E")
+hl.unbind("SUPER + SHIFT + ALT + E")
