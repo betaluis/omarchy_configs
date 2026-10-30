@@ -70,9 +70,13 @@ o.bind("SUPER + V", "Toggle window split", hl.dsp.layout("togglesplit"))
 -- Open Attio directly in Zen Browser.
 o.bind("SUPER + SHIFT + I", "Attio", o.launch("zen-browser --new-window https://app.attio.com"))
 
--- Disable the preinstalled HEY Mail shortcuts.
+-- Replace the notification action and disable the preinstalled HEY Mail shortcuts.
+-- SUPER+E was "Invoke last notification"; reserve it for Voxtype instead.
+hl.unbind("SUPER + E")
 hl.unbind("SUPER + SHIFT + E")
 hl.unbind("SUPER + SHIFT + ALT + E")
+o.bind("SUPER + E", "Toggle Voxtype voice-to-text", "voxtype record toggle")
+o.bind("SUPER + SHIFT + E", "Invoke last notification", "omarchy-shell notifications invokeLast")
 
 -- Toggle the active workspace between dwindle and scrolling layouts.
 o.bind("SUPER + D", "Toggle workspace dwindle/scrolling layout", "omarchy-hyprland-workspace-layout-toggle")
