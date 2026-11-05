@@ -78,5 +78,8 @@ hl.unbind("SUPER + SHIFT + ALT + E")
 o.bind("SUPER + E", "Toggle Voxtype voice-to-text", "voxtype record toggle")
 o.bind("SUPER + SHIFT + E", "Invoke last notification", "omarchy-shell notifications invokeLast")
 
+-- Replace the default Signal shortcut with the installed Grok Bot.
+o.rebind("SUPER + SHIFT + G", "Grok Bot", o.launch("gtk-launch grok-bot"))
+
 -- Toggle the active workspace between dwindle and scrolling layouts.
 o.bind("SUPER + D", "Toggle workspace dwindle/scrolling layout", "omarchy-hyprland-workspace-layout-toggle")
