@@ -63,6 +63,13 @@ o.bind("SUPER + SHIFT + L", "Move window right", hl.dsp.window.swap({ direction 
 o.bind("SUPER + SHIFT + K", "Move window up", hl.dsp.window.swap({ direction = "u" }))
 o.bind("SUPER + SHIFT + J", "Move window down", hl.dsp.window.swap({ direction = "d" }))
 
+-- Screenshot with a clickable annotation notification; Shift keeps clipboard-only capture.
+o.bind("SUPER + N", "Screenshot", "omarchy capture screenshot smart")
+
+-- Replace the default recording menu shortcut with a silent region-recording toggle.
+hl.unbind("ALT + PRINT")
+o.bind("SUPER + SHIFT + R", "Toggle screen recording (region, no audio)", "omarchy screenrecord")
+
 -- Screenshot directly to the clipboard, and put the old split toggle on SUPER+V.
 o.bind("SUPER + SHIFT + N", "Screenshot to clipboard", "omarchy-capture-screenshot smart copy")
 o.bind("SUPER + V", "Toggle window split", hl.dsp.layout("togglesplit"))
